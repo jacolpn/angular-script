@@ -1,0 +1,18 @@
+<div>
+  <a class="navbar-brand">
+    <i tabindex="0" (keyup.space)="menu.toggle()" (click)="menu.toggle()" class="fa fa-bars mr-2">Clica no menu</i>
+  </a>
+
+  <ap-menu #menu>
+    <ul class="list-unstyled">
+      <li>
+        <a [routerLink]="['p','add']">One</a>
+      </li>
+      <li>
+        <a [routerLink]="['/']">Two</a>
+      </li>
+    </ul>
+  </ap-menu>
+
+  <router-outlet></router-outlet>
+</div>
